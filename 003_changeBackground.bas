@@ -8,5 +8,5 @@
 140 print" {black}hit a key":rem  ctrl & 1
 150 get a$:if a$=""then 150
 160 x=int(rnd(1)*16)
-170 poke53282,x
+170 poke53282,x : rem background #1
 180 goto 150

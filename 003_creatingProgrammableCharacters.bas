@@ -9,6 +9,7 @@
 90 nextj:next i
 100 poke 1, peek(1) or 4 : rem switch in I/O bit2 with 1
 110 poke 56334, peek (56334) or 1 : rem turn on keyscan timer
+115 poke 53272,(peek(53272)and240)+12
 120 for car=60to63
 130 for byte = 0 to 7
 140 read number : rem read the data

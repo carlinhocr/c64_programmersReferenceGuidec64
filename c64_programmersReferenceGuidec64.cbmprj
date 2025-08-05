@@ -47,6 +47,7 @@
     <BuildList>
         <FileName>003_multiColorMode.bas</FileName>
         <FileName>003_changeBackground.bas</FileName>
+        <FileName>003_moveCharacterRAM.bas</FileName>
     </BuildList>
     <DetermineBuildOrder>0</DetermineBuildOrder>
     <PaddingByte>0</PaddingByte>
@@ -58,6 +59,17 @@
     <SourceFiles>
         <SourceFile>
             <Name>003_changeBackground.bas</Name>
+            <PrgName />
+            <FileType>1</FileType>
+            <IncludeInBuild>True</IncludeInBuild>
+            <Regions />
+            <Breakpoints />
+            <Bookmarks />
+            <Topmost>False</Topmost>
+            <FileOpen>True</FileOpen>
+        </SourceFile>
+        <SourceFile>
+            <Name>003_moveCharacterRAM.bas</Name>
             <PrgName />
             <FileType>1</FileType>
             <IncludeInBuild>True</IncludeInBuild>

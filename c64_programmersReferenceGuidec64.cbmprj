@@ -50,6 +50,8 @@
         <FileName>003_moveCharacterRAM.bas</FileName>
         <FileName>003_TforSmile.bas</FileName>
         <FileName>003_creatingProgrammableCharacters.bas</FileName>
+        <FileName>003_multiColorBasico.bas</FileName>
+        <FileName>003_multiColorProgrammableChar.bas</FileName>
     </BuildList>
     <DetermineBuildOrder>0</DetermineBuildOrder>
     <PaddingByte>0</PaddingByte>
@@ -78,7 +80,7 @@
             <Regions />
             <Breakpoints />
             <Bookmarks />
-            <Topmost>True</Topmost>
+            <Topmost>False</Topmost>
             <FileOpen>True</FileOpen>
         </SourceFile>
         <SourceFile>
@@ -93,6 +95,17 @@
             <FileOpen>False</FileOpen>
         </SourceFile>
         <SourceFile>
+            <Name>003_multiColorBasico.bas</Name>
+            <PrgName />
+            <FileType>1</FileType>
+            <IncludeInBuild>True</IncludeInBuild>
+            <Regions />
+            <Breakpoints />
+            <Bookmarks />
+            <Topmost>False</Topmost>
+            <FileOpen>True</FileOpen>
+        </SourceFile>
+        <SourceFile>
             <Name>003_multiColorMode.bas</Name>
             <PrgName />
             <FileType>1</FileType>
@@ -101,6 +114,17 @@
             <Breakpoints />
             <Bookmarks />
             <Topmost>False</Topmost>
+            <FileOpen>True</FileOpen>
+        </SourceFile>
+        <SourceFile>
+            <Name>003_multiColorProgrammableChar.bas</Name>
+            <PrgName />
+            <FileType>1</FileType>
+            <IncludeInBuild>True</IncludeInBuild>
+            <Regions />
+            <Breakpoints />
+            <Bookmarks />
+            <Topmost>True</Topmost>
             <FileOpen>True</FileOpen>
         </SourceFile>
         <SourceFile>

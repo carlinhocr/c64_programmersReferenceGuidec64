@@ -52,6 +52,7 @@
         <FileName>003_creatingProgrammableCharacters.bas</FileName>
         <FileName>003_multiColorBasico.bas</FileName>
         <FileName>003_multiColorProgrammableChar.bas</FileName>
+        <FileName>003_extendedColor.bas</FileName>
     </BuildList>
     <DetermineBuildOrder>0</DetermineBuildOrder>
     <PaddingByte>0</PaddingByte>
@@ -70,10 +71,21 @@
             <Breakpoints />
             <Bookmarks />
             <Topmost>False</Topmost>
-            <FileOpen>True</FileOpen>
+            <FileOpen>False</FileOpen>
         </SourceFile>
         <SourceFile>
             <Name>003_creatingProgrammableCharacters.bas</Name>
+            <PrgName />
+            <FileType>1</FileType>
+            <IncludeInBuild>True</IncludeInBuild>
+            <Regions />
+            <Breakpoints />
+            <Bookmarks />
+            <Topmost>False</Topmost>
+            <FileOpen>False</FileOpen>
+        </SourceFile>
+        <SourceFile>
+            <Name>003_extendedColor.bas</Name>
             <PrgName />
             <FileType>1</FileType>
             <IncludeInBuild>True</IncludeInBuild>
@@ -114,7 +126,7 @@
             <Breakpoints />
             <Bookmarks />
             <Topmost>False</Topmost>
-            <FileOpen>True</FileOpen>
+            <FileOpen>False</FileOpen>
         </SourceFile>
         <SourceFile>
             <Name>003_multiColorProgrammableChar.bas</Name>
@@ -124,8 +136,8 @@
             <Regions />
             <Breakpoints />
             <Bookmarks />
-            <Topmost>True</Topmost>
-            <FileOpen>True</FileOpen>
+            <Topmost>False</Topmost>
+            <FileOpen>False</FileOpen>
         </SourceFile>
         <SourceFile>
             <Name>003_TforSmile.bas</Name>
@@ -136,7 +148,7 @@
             <Breakpoints />
             <Bookmarks />
             <Topmost>False</Topmost>
-            <FileOpen>True</FileOpen>
+            <FileOpen>False</FileOpen>
         </SourceFile>
     </SourceFiles>
 </Project>

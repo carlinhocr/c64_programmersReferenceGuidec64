@@ -14,7 +14,7 @@
 140 by=be+ro*320+8*ca+ln : rem find the byte number horizontal
 150 bi=7-(xand7) : rem find the bit inside the byte horizontal
 155 rem draw the pixel
-160 poke(by),peek(by)or(2^bi);rem power to the bit number to convert dec.
+160 poke(by),peek(by)or(2^bi):rem power to the bit number to convert dec.
 170 next x
 180 poke 1024,16
 190 goto 190

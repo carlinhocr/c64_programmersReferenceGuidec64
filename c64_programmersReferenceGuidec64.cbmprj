@@ -53,6 +53,7 @@
         <FileName>003_multiColorBasico.bas</FileName>
         <FileName>003_multiColorProgrammableChar.bas</FileName>
         <FileName>003_extendedColor.bas</FileName>
+        <FileName>003_bitmapSineWave.bas</FileName>
     </BuildList>
     <DetermineBuildOrder>0</DetermineBuildOrder>
     <PaddingByte>0</PaddingByte>
@@ -62,6 +63,17 @@
     <RawExportList />
     <!--End of screen designer settings-->
     <SourceFiles>
+        <SourceFile>
+            <Name>003_bitmapSineWave.bas</Name>
+            <PrgName />
+            <FileType>1</FileType>
+            <IncludeInBuild>True</IncludeInBuild>
+            <Regions />
+            <Breakpoints />
+            <Bookmarks />
+            <Topmost>True</Topmost>
+            <FileOpen>True</FileOpen>
+        </SourceFile>
         <SourceFile>
             <Name>003_changeBackground.bas</Name>
             <PrgName />

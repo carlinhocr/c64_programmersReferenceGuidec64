@@ -57,6 +57,7 @@
         <FileName>003_bitmapSemicircle.bas</FileName>
         <FileName>003_test.bas</FileName>
         <FileName>003_windowsExtendedColor.bas</FileName>
+        <FileName>003_bitmapMulticolor.bas</FileName>
     </BuildList>
     <DetermineBuildOrder>0</DetermineBuildOrder>
     <PaddingByte>0</PaddingByte>
@@ -66,6 +67,17 @@
     <RawExportList />
     <!--End of screen designer settings-->
     <SourceFiles>
+        <SourceFile>
+            <Name>003_bitmapMulticolor.bas</Name>
+            <PrgName />
+            <FileType>1</FileType>
+            <IncludeInBuild>True</IncludeInBuild>
+            <Regions />
+            <Breakpoints />
+            <Bookmarks />
+            <Topmost>False</Topmost>
+            <FileOpen>True</FileOpen>
+        </SourceFile>
         <SourceFile>
             <Name>003_bitmapSemicircle.bas</Name>
             <PrgName />
@@ -195,7 +207,7 @@
             <Regions />
             <Breakpoints />
             <Bookmarks />
-            <Topmost>True</Topmost>
+            <Topmost>False</Topmost>
             <FileOpen>True</FileOpen>
         </SourceFile>
     </SourceFiles>

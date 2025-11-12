@@ -64,6 +64,7 @@
         <FileName>003_bitmapMulticolor.bas</FileName>
         <FileName>003_scroll.asm</FileName>
         <FileName>BASIC Files\004_p1_oneVoice.bas</FileName>
+        <FileName>BASIC Files\004_p2_multipleVoices.bas</FileName>
     </BuildList>
     <DetermineBuildOrder>0</DetermineBuildOrder>
     <PaddingByte>0</PaddingByte>
@@ -219,6 +220,17 @@
         </SourceFile>
         <SourceFile>
             <Name>\BASIC Files\004_p1_oneVoice.bas</Name>
+            <PrgName />
+            <FileType>1</FileType>
+            <IncludeInBuild>True</IncludeInBuild>
+            <Regions />
+            <Breakpoints />
+            <Bookmarks />
+            <Topmost>False</Topmost>
+            <FileOpen>True</FileOpen>
+        </SourceFile>
+        <SourceFile>
+            <Name>\BASIC Files\004_p2_multipleVoices.bas</Name>
             <PrgName />
             <FileType>1</FileType>
             <IncludeInBuild>True</IncludeInBuild>

@@ -28,7 +28,33 @@
 280 for k = 0 to 2
 290 i=0
 300 read nm
-310 rem if coded note is zero then goto next notw
+310 rem if coded note is zero then goto next voice
 320 if nm = 0 then GGGGGGGGGGGGG
 330 rem set coded waveform to proper voice i
 340 rem if silence then waveform is zero
+350 wa = v(k)
+360 wb = wa -1
+370 rem the silence is nm < 0 set waveform controls to zero
+380 if nm <0 then nm = -nm:wa=0:wb=0
+390 rem note formula encoding
+400 rem the duration 1/16 is multiplied by 8
+410 rem the result of step 1 is added to the octave (0-7)
+420 rem the result of step 2 is then multiplied by 16
+430 rem the result of step 3 is the added to your note (0-11)
+440 rem the silence is the negative of the duration number 1/16 * 128
+450 rem coded number 594
+460 rem divide by 128 because the duration was multipled by 8
+470 rem and then multiplied by 16 to get the octave
+480 rem dr = 594/128 = 4 so it is 1/4 the type of note
+490 rem oc = (594-128*4)/16 = 5
+500 rem nt = 594-128*4-16*5 = 2
+510 rem 594 equals a duration of 4 1/16, octave 5 and base note of 2=d
+520 rem it is d5
+530 rem decode duration
+540 dr% = nm/128
+550 rem decode octave
+560 oc% = (nm-128*dr%)/16
+570 rem decode note
+580 nt = nm-128*dr%-16*oc%
+590 rem get base frequency for the note
+600 fr=fq(nt)

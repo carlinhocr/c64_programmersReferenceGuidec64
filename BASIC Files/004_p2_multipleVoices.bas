@@ -37,6 +37,8 @@
 370 rem the silence is nm < 0 set waveform controls to zero
 380 if nm <0 then nm = -nm:wa=0:wb=0
 390 rem note formula encoding
+395 rem ((((d*8)+o)*16)+n)
+398 rem ((((4*8)+5)*16)+2)
 400 rem the duration 1/16 is multiplied by 8
 410 rem the result of step 1 is added to the octave (0-7)
 420 rem the result of step 2 is then multiplied by 16

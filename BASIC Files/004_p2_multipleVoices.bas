@@ -45,6 +45,8 @@
 430 rem the result of step 3 is the added to your note (0-11)
 440 rem the silence is the negative of the duration number 1/16 * 128
 450 rem coded number 594
+452 rem Dura  Octa Note
+455 rem 00100 101  0010
 460 rem divide by 128 because the duration was multipled by 8
 470 rem and then multiplied by 16 to get the octave
 480 rem dr = 594/128 = 4 so it is 1/4 the type of note

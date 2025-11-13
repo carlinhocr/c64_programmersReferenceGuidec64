@@ -32,7 +32,7 @@
 320 i=0
 330 read nm
 340 rem if coded note is zero then goto next voice
-350 if nm = 0 then GGGGGGGGGGGGG
+350 if nm = 0 then 1040
 360 rem set coded waveform to proper voice i
 370 rem if silence then waveform is zero
 380 rem wa is the waveform + active/gate bit (bit 0 of control register)
@@ -94,9 +94,29 @@
 940 i=i+1
 950 next j
 960 rem for last beat of the note this happens
-965 h(k,i) = hf%
-920 l(k,i) = lf%
-930 c(k,i) = wb : rem turn OFF
-940 i = i+1
-950 goto 330 : rem read next note for this voice (read nm)
-970 
+970 h(k,i) = hf%
+980 l(k,i) = lf%
+990 c(k,i) = wb : rem turn OFF
+1000 i = i+1
+1010 goto 330 : rem read next note for this voice (read nm)
+1020 rem im = maximum amount of 1/16 activities for all voices
+1030 rem it can be 155for the maximun voice and other voices go silent before
+1040 if i > im then im =i
+1050 next k
+1060 rem set attack decay for voice 1 a=0,d=0
+1070 poke s+5,0
+1080 rem set sustain release for voice 1 s=15,r=0
+1090 poke s+6,240
+1100 rem set attack decay for voice 2 a=5,d=5
+1110 poke s+12,85
+1120 rem set sustain release for voice 2 s=8,r=5
+1130 poke s+13,133
+1140 1060 rem set attack decay for voice 3 a=0,d=10
+1150 poke s+19,10
+1160 rem set sustain release for voice 3 s=12,r=5
+1170 poke s+20,197
+1180 rem set volumen Max 1111 and low pass filtering bit 4
+1190 rem 31 = 0001 1111
+1200 poke s+24,31
+
+

@@ -118,5 +118,45 @@
 1180 rem set volumen Max 1111 and low pass filtering bit 4
 1190 rem 31 = 0001 1111
 1200 poke s+24,31
+1210 rem star loop for every 1/16 interval
+1220 rem im is the maximum amount of intervals in any of the voices
+1230 for i = 0 to im
+1240 rem poke low frequency for the three voices
+1250 poke s,l(0,i)
+1260 poke s+7,l(1,i)
+1270 poke s+14,l(2,i)
+1280 rem poke high frequency for the three voices
+1290 poke s+1,h(0,i)
+1300 poke s+8,h(1,i)
+1310 poke s+15,h(2,i)
+1320 rem poke control for the three voices
+1340 poke s+4,c(0,i)
+1350 poke s+11,c(1,i)
+1360 poke s+18,c(2,i)
+1370 rem timing loop for 1/16 of a measure
+1380 for t = 1 to 80
+1390 next t
+1400 rem end 1/16 of a measure loop
+1410 next i
+1420 rem pause, then turn off volume
+1430 for t = 1 to 200
+1440 next t
+1450 poke s+24,0
+1460 rem base frequency data
+1470 data 34334,36376,38539,40830 : rem c7,c#7,d7,d#7
+1480 data 43258,45830,48556,51443 : rem e7,f7,f#7,g7
+1490 data 54502,57743,61176,64814 : rem g#7,a7,a#7,b7
+1500 rem voice 1 data notes + duration
+1510 data 594,594,594,596,596,1618,587,592,587,585,331,336
+1520 data 1097,583,585,585,585,587,587,1609,585,331,337,594,594,593
+1530 data 1618,594,596,594,592,587,1616,587,585,331,336,841,327
+1540 data 1607,0
+1550 rem voice 2 data notes + duration
+1560 data 583,585,583,583,327,329,1611,583,585,578,578,578
+1570 data 196,198,583,326,578,326,327,329,327,329,326,578,583
+1580 data 1606,582,322,324,582,587,329,327,1606,583,327,329,587,331,329
+1590 data 329,328,1609,578,834,324,322,327,585,1602,0
+1600 rem voice 3 data notes + duration
+1610 data 
 
 

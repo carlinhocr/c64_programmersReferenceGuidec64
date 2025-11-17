@@ -80,8 +80,8 @@
 800 rem first fill all the notes for a single voice
 810 rem load several positions of 1/16 parts on the corresponding voice
 820 rem only if sixteenth note dr =1, k=voice number, i=sound 1/16 position
-830 if dr%=1 then h(k,i)=%hf
-840 if dr%=1 then l(k,i)=%lf
+830 if dr%=1 then h(k,i)=hf%
+840 if dr%=1 then l(k,i)=lf%
 850 if dr%=1 then c(k,i)=wa : rem turn on
 860 if dr%=1 then i=i+1 :rem fix position in array for next voice too
 870 if dr%=1 then goto 330 : rem read next note for this voice (read nm)
@@ -111,7 +111,7 @@
 1110 poke s+12,85
 1120 rem set sustain release for voice 2 s=8,r=5
 1130 poke s+13,133
-1140 1060 rem set attack decay for voice 3 a=0,d=10
+1140 rem set attack decay for voice 3 a=0,d=10
 1150 poke s+19,10
 1160 rem set sustain release for voice 3 s=12,r=5
 1170 poke s+20,197
@@ -130,37 +130,37 @@
 1300 poke s+8,h(1,i)
 1310 poke s+15,h(2,i)
 1320 rem poke control for the three voices
-1340 poke s+4,c(0,i)
-1350 poke s+11,c(1,i)
-1360 poke s+18,c(2,i)
-1370 rem timing loop for 1/16 of a measure
-1380 for t = 1 to 80
-1390 next t
-1400 rem end 1/16 of a measure loop
-1410 next i
-1420 rem pause, then turn off volume
-1430 for t = 1 to 200
-1440 next t
-1450 poke s+24,0
-1460 rem base frequency data
-1470 data 34334,36376,38539,40830 : rem c7,c#7,d7,d#7
-1480 data 43258,45830,48556,51443 : rem e7,f7,f#7,g7
-1490 data 54502,57743,61176,64814 : rem g#7,a7,a#7,b7
-1500 rem voice 1 data notes + duration
-1510 data 594,594,594,596,596,1618,587,592,587,585,331,336
-1520 data 1097,583,585,585,585,587,587,1609,585,331,337,594,594,593
-1530 data 1618,594,596,594,592,587,1616,587,585,331,336,841,327
-1540 data 1607,0
-1550 rem voice 2 data notes + duration
-1560 data 583,585,583,583,327,329,1611,583,585,578,578,578
-1570 data 196,198,583,326,578,326,327,329,327,329,326,578,583
-1580 data 1606,582,322,324,582,587,329,327,1606,583,327,329,587,331,329
-1590 data 329,328,1609,578,834,324,322,327,585,1602,0
-1600 rem voice 3 data notes + duration
-1610 data 567,566,567,304,306,308,310,1591,567,311,310,567
-1620 data 306,304,299,308,304,171,176,306,291,551,306,308
-1630 data 310,308,310,306,295,297,299,304,1586,562,567,310,315,311
-1640 data 308,313,297,1586,567,560,311,309,308,309,306,308
-1650 data 1577,299,295,306,310,311,304,562,546,1575,0
+1330 poke s+4,c(0,i)
+1340 poke s+11,c(1,i)
+1350 poke s+18,c(2,i)
+1360 rem timing loop for 1/16 of a measure
+1370 for t = 1 to 80
+1380 next t
+1390 rem end 1/16 of a measure loop
+1400 next i
+1410 rem pause, then turn off volume
+1420 for t = 1 to 200
+1430 next t
+1440 poke s+24,0
+1450 rem base frequency data
+1460 data 34334,36376,38539,40830 : rem c7,c#7,d7,d#7
+1470 data 43258,45830,48556,51443 : rem e7,f7,f#7,g7
+1480 data 54502,57743,61176,64814 : rem g#7,a7,a#7,b7
+1490 rem voice 1 data notes + duration
+1500 data 594,594,594,596,596,1618,587,592,587,585,331,336
+1510 data 1097,583,585,585,585,587,587,1609,585,331,337,594,594,593
+1520 data 1618,594,596,594,592,587,1616,587,585,331,336,841,327
+1530 data 1607,0
+1540 rem voice 2 data notes + duration
+1550 data 583,585,583,583,327,329,1611,583,585,578,578,578
+1560 data 196,198,583,326,578,326,327,329,327,329,326,578,583
+1570 data 1606,582,322,324,582,587,329,327,1606,583,327,329,587,331,329
+1580 data 329,328,1609,578,834,324,322,327,585,1602,0
+1590 rem voice 3 data notes + duration
+1600 data 567,566,567,304,306,308,310,1591,567,311,310,567
+1610 data 306,304,299,308,304,171,176,306,291,551,306,308
+1620 data 310,308,310,306,295,297,299,304,1586,562,567,310,315,311
+1630 data 308,313,297,1586,567,560,311,309,308,309,306,308
+1640 data 1577,299,295,306,310,311,304,562,546,1575,0
 
 

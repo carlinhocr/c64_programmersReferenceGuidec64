@@ -68,6 +68,10 @@
         <FileName>BASIC Files\004_p3_triangle.bas</FileName>
         <FileName>BASIC Files\004_p4_pulse.bas</FileName>
         <FileName>BASIC Files\004_p5_noise.bas</FileName>
+        <FileName>BASIC Files\004_p6_adsr.bas</FileName>
+        <FileName>BASIC Files\004_p7_adsr_xilo.bas</FileName>
+        <FileName>BASIC Files\004_p8_adsr_synth.bas</FileName>
+        <FileName>BASIC Files\004_p9_adsr_piano.bas</FileName>
     </BuildList>
     <DetermineBuildOrder>0</DetermineBuildOrder>
     <PaddingByte>0</PaddingByte>
@@ -267,6 +271,50 @@
         </SourceFile>
         <SourceFile>
             <Name>\BASIC Files\004_p5_noise.bas</Name>
+            <PrgName />
+            <FileType>1</FileType>
+            <IncludeInBuild>True</IncludeInBuild>
+            <Regions />
+            <Breakpoints />
+            <Bookmarks />
+            <Topmost>False</Topmost>
+            <FileOpen>True</FileOpen>
+        </SourceFile>
+        <SourceFile>
+            <Name>\BASIC Files\004_p6_adsr.bas</Name>
+            <PrgName />
+            <FileType>1</FileType>
+            <IncludeInBuild>True</IncludeInBuild>
+            <Regions />
+            <Breakpoints />
+            <Bookmarks />
+            <Topmost>False</Topmost>
+            <FileOpen>True</FileOpen>
+        </SourceFile>
+        <SourceFile>
+            <Name>\BASIC Files\004_p7_adsr_xilo.bas</Name>
+            <PrgName />
+            <FileType>1</FileType>
+            <IncludeInBuild>True</IncludeInBuild>
+            <Regions />
+            <Breakpoints />
+            <Bookmarks />
+            <Topmost>False</Topmost>
+            <FileOpen>True</FileOpen>
+        </SourceFile>
+        <SourceFile>
+            <Name>\BASIC Files\004_p8_adsr_synth.bas</Name>
+            <PrgName />
+            <FileType>1</FileType>
+            <IncludeInBuild>True</IncludeInBuild>
+            <Regions />
+            <Breakpoints />
+            <Bookmarks />
+            <Topmost>False</Topmost>
+            <FileOpen>True</FileOpen>
+        </SourceFile>
+        <SourceFile>
+            <Name>\BASIC Files\004_p9_adsr_piano.bas</Name>
             <PrgName />
             <FileType>1</FileType>
             <IncludeInBuild>True</IncludeInBuild>
